@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/rodrick.jpg";
-// import { AiOutlineExperiment, AiFillFolderOpen } from "react-icons/ai";
-import { GiSpookyHouse } from "react-icons/gi";
+import { AiOutlineExperiment, AiFillFolderOpen } from "react-icons/ai";
+// import { GiSpookyHouse } from "react-icons/gi";
 
 const About = () => {
   return (
