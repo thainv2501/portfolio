@@ -1,4 +1,4 @@
-// import Header from './components/header/Header';
+import Header from './components/header/Header';
 import About from './components/about/About';
 // import MyProjects from './components/myProjects/MyProjects';
 // import Contact from './components/contact/Contact';
@@ -9,7 +9,7 @@ export default function App() {
 
     return (
         <div>
-            {/* <Header /> */}
+            <Header />
             {/* <Nav /> */}
             <About />
             {/* <MyProjects />
