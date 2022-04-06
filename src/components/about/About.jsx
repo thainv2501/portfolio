@@ -34,7 +34,7 @@ const About = () => {
             </article>
 
             <article className="about__card">
-              <GiSpookyHouse className="about__icon" />
+              {/* <GiSpookyHouse className="about__icon" /> */}
               <h5>Worked For</h5>
               <small>1+ Companies</small>
             </article>
