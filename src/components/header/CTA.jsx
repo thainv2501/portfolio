@@ -10,6 +10,7 @@ export const CTA = () => {
       <a
         href="https://www.facebook.com/taolanhuthedo/"
         target="_blank"
+        rel="noreferrer noopener"
         className="btn"
       >
         Let's Talk
