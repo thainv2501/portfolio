@@ -3,14 +3,14 @@ import Header from './components/header/Header';
 // import MyProjects from './components/myProjects/MyProjects';
 // import Contact from './components/contact/Contact';
 // import Footer from './components/footer/Footer';
-import Nav from './components/nav/Nav';
+// import Nav from './components/nav/Nav';
 
 export default function App() {
 
     return (
         <>
             <Header />
-            <Nav />
+            {/* <Nav /> */}
             {/* <About /> */}
             {/* <MyProjects />
             <Contact />
