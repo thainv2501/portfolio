@@ -1,5 +1,5 @@
-import Header from './components/header/Header';
-// import About from './components/about/About';
+// import Header from './components/header/Header';
+import About from './components/about/About';
 // import MyProjects from './components/myProjects/MyProjects';
 // import Contact from './components/contact/Contact';
 // import Footer from './components/footer/Footer';
@@ -8,13 +8,14 @@ import Header from './components/header/Header';
 export default function App() {
 
     return (
-        <>
-            <Header />
+        <div>
+            {/* <Header /> */}
             {/* <Nav /> */}
-            {/* <About /> */}
+            <About />
             {/* <MyProjects />
             <Contact />
             <Footer /> */}
-        </>
+        </div>
+
     )
 }
