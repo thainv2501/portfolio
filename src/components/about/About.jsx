@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-// import ME from "../../assets/rodrick.jpg";
+import ME from "../../assets/rodrick.jpg";
 // import { AiTwotoneExperiment, AiFillFolderOpen } from "react-icons/ai";
 // import { GiSpookyHouse } from "react-icons/gi";
 
@@ -12,7 +12,7 @@ const About = () => {
         <h2>About Me</h2>
       </div>
 
-      {/* <div className="container about__container">
+      <div className="container about__container">
         <div className="about__me">
           <div className="about__me-img">
             <img src={ME} alt="About Me" />
@@ -22,19 +22,19 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <AiTwotoneExperiment className="about__icon" />
+              {/* <AiTwotoneExperiment className="about__icon" /> */}
               <h5>Experience</h5>
               <small>1+ Years Working</small>
             </article>
 
             <article className="about__card">
-              <AiFillFolderOpen className="about__icon" />
+              {/* <AiFillFolderOpen className="about__icon" /> */}
               <h5>Projects</h5>
               <small>10+ Projects</small>
             </article>
 
             <article className="about__card">
-              <GiSpookyHouse className="about__icon" />
+              {/* <GiSpookyHouse className="about__icon" /> */}
               <h5>Worked For</h5>
               <small>1+ Companies</small>
             </article>
@@ -50,7 +50,7 @@ const About = () => {
             See More
           </a>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
