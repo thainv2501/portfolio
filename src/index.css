@@ -51,6 +51,7 @@ html {
 .stars {
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   position: fixed;
   bottom: -8rem;
   z-index: -10;

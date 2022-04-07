@@ -7,8 +7,6 @@ import reportWebVitals from './reportWebVitals';
 
 const starNumber = 450;
 const stars = document.getElementsByClassName('stars')[0];
-stars.style.gridTemplateColumns = `repeat(auto-fit,minmax(10px,1fr))`;
-
 for (let index = 0; index < starNumber; index++) {
   let spanNode = document.createElement('span')
   let rng1 = Math.floor(Math.random() * 255)
