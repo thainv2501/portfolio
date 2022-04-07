@@ -11,12 +11,12 @@ import React, { useState, useEffect } from 'react';
 
 export default function App() {
     const [me, setMe] = useState(data);
-    const { name: { first, middle, last }, experiment } = me;
+    const { name: { first, middle, last }, experiment, about } = me;
     return (
         <div>
             <Header me={me} />
             <Nav />
-            <About />
+            <About about={about} />
             <MyProjects experiment={experiment} />
             {/* <Contact />
             <Footer /> */}

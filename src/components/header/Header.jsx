@@ -17,8 +17,8 @@ const Header = ({ me }) => {
         <h1>
           {`${middle} ${last}`} "{nick_name}"
         </h1>
-        {position.map((job) => {
-          return <h5>{job}</h5>;
+        {position.map((job, index) => {
+          return <h5 key={index}>{job}</h5>;
         })}
         <CTA />
         <HeaderSocials />

@@ -4,7 +4,8 @@ import ME from "../../assets/rodrick.jpg";
 import { AiOutlineExperiment, AiFillFolderOpen } from "react-icons/ai";
 import { BiBuildingHouse } from "react-icons/bi";
 
-const About = () => {
+const About = ({ about }) => {
+  const { experiment_years, worked_for, projects_number } = about;
   return (
     <div id="about">
       <div className="title">
@@ -24,27 +25,25 @@ const About = () => {
             <article className="about__card">
               <AiOutlineExperiment className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <small>{experiment_years} Years Working</small>
             </article>
 
             <article className="about__card">
               <AiFillFolderOpen className="about__icon" />
               <h5>Projects</h5>
-              <small>10+ Projects</small>
+              <small>{projects_number} Projects</small>
             </article>
 
             <article className="about__card">
               <BiBuildingHouse className="about__icon" />
               <h5>Worked For</h5>
-              <small>1+ Companies</small>
+              <small>{worked_for} Companies</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit vero cupiditate quam similique repellat deserunt
-            libero eum tempore laboriosam. Quidem soluta, quaerat cumque
-            reprehenderit quisquam tempora modi eveniet totam repudiandae.
+            Passion with code and beautiful website. I may be not good in many
+            thing but will try to finish anything as well as i can
           </p>
           <a href="#about" className="btn btn-primary">
             See More
