@@ -1,6 +1,7 @@
 import Header from './components/header/Header';
 import About from './components/about/About';
 import MyProjects from './components/myProjects/MyProjects';
+import Skills from './components/skills/Skills';
 // import Contact from './components/contact/Contact';
 // import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav';
@@ -17,7 +18,8 @@ export default function App() {
             <Header me={me} />
             <Nav />
             <About about={about} />
-            <MyProjects experiment={experiment} />
+            <Skills />
+            <MyProjects />
             {/* <Contact />
             <Footer /> */}
         </div>

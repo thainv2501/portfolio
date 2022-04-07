@@ -1,6 +1,10 @@
 import React from "react";
 import "./nav.css";
-import { AiFillHome, AiOutlineFundProjectionScreen } from "react-icons/ai";
+import {
+  AiFillHome,
+  AiOutlineFundProjectionScreen,
+  AiFillCheckCircle,
+} from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { useState } from "react";
 
@@ -21,6 +25,13 @@ const Nav = () => {
         className={activeNav === "#about" ? "active" : ""}
       >
         <BsFillPersonFill />
+      </a>
+      <a
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <AiFillCheckCircle />
       </a>
       <a
         href="#myProjects"
