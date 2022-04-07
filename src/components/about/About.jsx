@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 import ME from "../../assets/rodrick.jpg";
 import { AiOutlineExperiment, AiFillFolderOpen } from "react-icons/ai";
-// import { GiSpookyHouse } from "react-icons/gi";
+import { BiBuildingHouse } from "react-icons/bi";
 
 const About = () => {
   return (
@@ -22,19 +22,19 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              {/* <AiOutlineExperiment className="about__icon" /> */}
+              <AiOutlineExperiment className="about__icon" />
               <h5>Experience</h5>
               <small>1+ Years Working</small>
             </article>
 
             <article className="about__card">
-              {/* <AiFillFolderOpen className="about__icon" /> */}
+              <AiFillFolderOpen className="about__icon" />
               <h5>Projects</h5>
               <small>10+ Projects</small>
             </article>
 
             <article className="about__card">
-              {/* <GiSpookyHouse className="about__icon" /> */}
+              <BiBuildingHouse className="about__icon" />
               <h5>Worked For</h5>
               <small>1+ Companies</small>
             </article>
