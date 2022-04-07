@@ -1,8 +1,7 @@
 import React from "react";
 import "./nav.css";
-import { AiFillHome } from "react-icons/ai";
-import { SiAboutdotme } from "react-icons/si";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { AiFillHome, AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
 import { useState } from "react";
 
 const Nav = () => {
@@ -21,7 +20,7 @@ const Nav = () => {
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
-        <SiAboutdotme />
+        <BsFillPersonFill />
       </a>
       <a
         href="#myProjects"
