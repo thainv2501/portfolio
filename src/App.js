@@ -6,19 +6,19 @@ import Skills from './components/skills/Skills';
 // import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav';
 import data from './data'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 
 export default function App() {
     const [me, setMe] = useState(data);
-    const { name: { first, middle, last }, experiment, about } = me;
+    const { about, skills } = me;
     return (
         <div>
             <Header me={me} />
             <Nav />
             <About about={about} />
-            <Skills />
+            <Skills skills={skills} />
             <MyProjects />
             {/* <Contact />
             <Footer /> */}

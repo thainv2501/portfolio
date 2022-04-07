@@ -11,8 +11,18 @@ export default {
         worked_for: 1,
         projects_number: 2
     },
-    experiment: {
-        front_end: ['HTML', 'CSS', 'Java Script', 'React JS', 'Boot Strap 5'],
-        back_end: ['Java']
-    }
+    skills: [
+        {
+            title: 'Front End Skills',
+            skill_name: ['HTML', 'CSS', 'Java Script', 'React JS', 'Boot Strap 5'],
+        },
+        {
+            title: 'Back End Skills',
+            skill_name: ['Java'],
+        },
+        {
+            title: 'Language',
+            skill_name: ['Vietnamese', 'English', 'Japanese'],
+        }
+    ]
 }
