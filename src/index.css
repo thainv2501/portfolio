@@ -21,6 +21,7 @@
   --container-width-sm: 90%;
   --transition: all 400ms ease-in-out;
   --scale: 1.6;
+  --shadow: rgba(65, 129, 193, 0.5) 0rem 0rem 1rem 0.5rem;
 }
 
 body {

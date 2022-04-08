@@ -23,6 +23,7 @@
   padding: 1rem 5rem;
   background-color: var(--color-primary-variant);
   place-items: center;
+  box-shadow: var(--shadow)
 }
 .skills__content {
   display: grid;
