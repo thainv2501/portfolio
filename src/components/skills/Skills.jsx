@@ -15,15 +15,17 @@ const Skills = ({ skills }) => {
           const { title, skill_name } = skill;
           return (
             <div className="skills" key={index}>
-              <h1>{title}</h1>
-              {skill_name.map((skn, index) => {
-                return (
-                  <article className="skill" key={index}>
-                    <AiFillCheckCircle className="skill__icon" />
-                    <p>{skn}</p>
-                  </article>
-                );
-              })}
+              <h3 className="skill__title" >{title}</h3>
+              <div className="skills__content">
+                {skill_name.map((skn, index) => {
+                  return (
+                    <article className="skill" key={index}>
+                      <AiFillCheckCircle className="skill__icon" />
+                      <p>{skn}</p>
+                    </article>
+                  );
+                })}
+              </div>
             </div>
           );
         })}
