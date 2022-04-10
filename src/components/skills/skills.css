@@ -38,6 +38,10 @@
 .skill__icon {
   margin-top: 6px;
 }
+.level{
+  font-size: 0.8rem;
+  color: rgb(89, 117, 199);
+}
 
 /* ====================MEDIA QUERY(medium)============================ */
 @media screen and (max-width: 1024px) {

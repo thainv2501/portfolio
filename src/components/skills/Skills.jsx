@@ -12,16 +12,20 @@ const Skills = ({ skills }) => {
 
       <div className="container skills__container">
         {skills.map((skill, index) => {
-          const { title, skill_name } = skill;
+          const { title, detail } = skill;
           return (
             <div className="skills" key={index}>
-              <h3 className="skill__title" >{title}</h3>
+              <h3 className="skill__title">{title}</h3>
               <div className="skills__content">
-                {skill_name.map((skn, index) => {
+                {detail.map((skn, index) => {
+                  const { skill_name, level } = skn;
                   return (
                     <article className="skill" key={index}>
                       <AiFillCheckCircle className="skill__icon" />
-                      <p>{skn}</p>
+                      <section className="skill_detail">
+                        <p>{skill_name}</p>
+                        <p className="level">{level}</p>
+                      </section>
                     </article>
                   );
                 })}

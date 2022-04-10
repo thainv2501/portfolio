@@ -14,15 +14,69 @@ export default {
     skills: [
         {
             title: 'Front End Skills',
-            skill_name: ['HTML', 'CSS', 'Java Script', 'React JS', 'Boot Strap 5'],
+            detail: [
+                {
+                    skill_name: 'HTML',
+                    level: "Medium",
+                },
+                {
+                    skill_name: 'CSS',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'Java Script',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'React JS',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'Boot Strap',
+                    level: "Medium"
+                },
+            ]
         },
         {
             title: 'Back End Skills',
-            skill_name: ['Java'],
+            detail: [{
+                skill_name: 'Java',
+                level: "Medium"
+            }]
         },
         {
             title: 'Language',
-            skill_name: ['Vietnamese', 'English', 'Japanese'],
+            detail: [
+                {
+                    skill_name: 'English',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'Japanese',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'VietNamese',
+                    level: "Master"
+                },
+            ]
+        },
+        {
+            title: 'Also Know',
+            detail: [
+                {
+                    skill_name: 'Git',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'GitHub',
+                    level: "Medium"
+                },
+                {
+                    skill_name: 'SQL',
+                    level: "Master"
+                },
+            ]
         }
     ]
 }
