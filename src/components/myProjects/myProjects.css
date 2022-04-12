@@ -55,6 +55,10 @@
   padding: 2rem 0 0;
   margin-top: auto;
 }
+.more{
+text-align: center;
+padding: 2rem;
+}
 
 /* ====================MEDIA QUERY(medium)============================ */
 @media screen and (max-width: 1024px) {

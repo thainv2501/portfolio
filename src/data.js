@@ -1,4 +1,7 @@
-import ME from "./assets/rodrick.jpg";
+import color_box_img from "./assets/color-box.png";
+import creative_navbar_img from "./assets/creative-navbar.png";
+import keo_bua_bao from "./assets/keo_bua_bao.png";
+
 
 const data = {
     name: {
@@ -84,31 +87,24 @@ const data = {
     projects: [
         {
             project_name: "color-box-1",
-            project_img: ME,
+            project_img: color_box_img,
             description: "practice javascript skill, add box and randoms color",
-            git_hub_link: "",
-            demo_link: ""
+            git_hub_link: "https://github.com/thainv2501/color-box-1",
+            demo_link: "https://thainv2501.github.io/color-box-1/"
         },
         {
-            project_name: "color-box-1",
-            project_img: ME,
-            description: "practice javascript skill, add box and randoms color",
-            git_hub_link: "",
-            demo_link: ""
+            project_name: "Creative Nav Bar",
+            project_img: creative_navbar_img,
+            description: "practice CSS skill",
+            git_hub_link: "https://github.com/thainv2501/creative-navbar",
+            demo_link: "https://thainv2501.github.io/creative-navbar/"
         },
         {
-            project_name: "color-box-1",
-            project_img: ME,
-            description: "practice javascript skill, add box and randoms color",
-            git_hub_link: "",
-            demo_link: ""
-        },
-        {
-            project_name: "color-box-1",
-            project_img: ME,
-            description: "practice javascript skill, add box and randoms color",
-            git_hub_link: "",
-            demo_link: ""
+            project_name: "Rock-paper-scissor",
+            project_img: keo_bua_bao,
+            description: "A game created by java script",
+            git_hub_link: "https://github.com/thainv2501/Rock-papper-scissor",
+            demo_link: "https://thainv2501.github.io/Rock-papper-scissor/"
         },
     ]
 }

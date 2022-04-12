@@ -1,7 +1,8 @@
 import "./myProjects.css";
-import React from "react";
+import React, { useState } from "react";
 
 const MyProjects = ({ projects }) => {
+  const [currentProjects, setCurrentProjects] = useState([]);
   return (
     <div id="myProjects">
       <div className="container myProjects__container">
@@ -11,16 +12,16 @@ const MyProjects = ({ projects }) => {
         </div>
 
         <div className="projects">
-          {projects.map((projects) => {
+          {currentProjects.map((project, index) => {
             const {
               project_name,
               project_img,
               description,
               git_hub_link,
               demo_link,
-            } = projects;
+            } = project;
             return (
-              <section className="project">
+              <section className="project" key={index}>
                 <div className="project__img">
                   <img src={project_img} alt="project img" />
                 </div>
@@ -31,10 +32,20 @@ const MyProjects = ({ projects }) => {
                 </div>
 
                 <div className="detail__bottom">
-                  <a href={git_hub_link} className="btn">
+                  <a
+                    href={git_hub_link}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="btn"
+                  >
                     Gib Hub
                   </a>
-                  <a href={demo_link} className="btn btn-primary">
+                  <a
+                    href={demo_link}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="btn btn-primary"
+                  >
                     View demo
                   </a>
                 </div>
@@ -42,6 +53,17 @@ const MyProjects = ({ projects }) => {
             );
           })}
         </div>
+      </div>
+      <div className="more">
+        <button
+          className="btn btn-primary see__more__btn"
+          onClick={() => {
+            setCurrentProjects(projects);
+          }}
+        >
+          {" "}
+          See more
+        </button>
       </div>
     </div>
   );
