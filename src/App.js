@@ -12,14 +12,14 @@ import React, { useState } from 'react';
 
 export default function App() {
     const [me, setMe] = useState(data);
-    const { about, skills } = me;
+    const { about, skills, projects } = me;
     return (
         <div>
             <Header me={me} />
             <Nav />
             <About about={about} />
             <Skills skills={skills} />
-            <MyProjects />
+            <MyProjects projects={projects} />
             {/* <Contact />
             <Footer /> */}
         </div>

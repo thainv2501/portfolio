@@ -5,6 +5,7 @@
 
 .myProjects__title {
   text-align: center;
+  padding-bottom: 4rem;
 }
 .projects {
   display: grid;
@@ -53,4 +54,27 @@
   gap: 2rem;
   padding: 2rem 0 0;
   margin-top: auto;
+}
+
+/* ====================MEDIA QUERY(medium)============================ */
+@media screen and (max-width: 1024px) {
+  .myProjects__container {
+    width: var(--container-width-md);
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+/* ====================MEDIA QUERY(small)============================ */
+@media screen and (max-width: 600px) {
+  .myProjects__container {
+    width: var(--container-width-sm);
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
 }

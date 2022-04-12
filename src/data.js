@@ -1,4 +1,6 @@
-export default {
+import ME from "./assets/rodrick.jpg";
+
+const data = {
     name: {
         first: 'Nguyen',
         middle: 'Viet',
@@ -78,5 +80,37 @@ export default {
                 },
             ]
         }
+    ],
+    projects: [
+        {
+            project_name: "color-box-1",
+            project_img: ME,
+            description: "practice javascript skill, add box and randoms color",
+            git_hub_link: "",
+            demo_link: ""
+        },
+        {
+            project_name: "color-box-1",
+            project_img: ME,
+            description: "practice javascript skill, add box and randoms color",
+            git_hub_link: "",
+            demo_link: ""
+        },
+        {
+            project_name: "color-box-1",
+            project_img: ME,
+            description: "practice javascript skill, add box and randoms color",
+            git_hub_link: "",
+            demo_link: ""
+        },
+        {
+            project_name: "color-box-1",
+            project_img: ME,
+            description: "practice javascript skill, add box and randoms color",
+            git_hub_link: "",
+            demo_link: ""
+        },
     ]
 }
+
+export default data;

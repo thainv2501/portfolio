@@ -1,8 +1,7 @@
 import "./myProjects.css";
 import React from "react";
-import ME from "../../assets/rodrick.jpg";
 
-const MyProjects = () => {
+const MyProjects = ({ projects }) => {
   return (
     <div id="myProjects">
       <div className="container myProjects__container">
@@ -12,30 +11,36 @@ const MyProjects = () => {
         </div>
 
         <div className="projects">
-          <section className="project">
-            <div className="project__img">
-              <img src={ME} alt="" />
-            </div>
+          {projects.map((projects) => {
+            const {
+              project_name,
+              project_img,
+              description,
+              git_hub_link,
+              demo_link,
+            } = projects;
+            return (
+              <section className="project">
+                <div className="project__img">
+                  <img src={project_img} alt="project img" />
+                </div>
 
-            <div className="detail__top">
-              <h1 className="project__name">check1</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Facilis possimus alias quo at excepturi sed aliquid aperiam
-                dolorem. Hic ab voluptate aperiam quam? Omnis unde molestiae
-                asperiores ratione dolorem necessitatibus.
-              </p>
-            </div>
+                <div className="detail__top">
+                  <h1 className="project__name">{project_name}</h1>
+                  <p className="description">{description}</p>
+                </div>
 
-            <div className="detail__bottom">
-              <a href="#home" className="btn">
-                Link Code
-              </a>
-              <a href="#home" className="btn btn-primary">
-                View demo
-              </a>
-            </div>
-          </section>
+                <div className="detail__bottom">
+                  <a href={git_hub_link} className="btn">
+                    Gib Hub
+                  </a>
+                  <a href={demo_link} className="btn btn-primary">
+                    View demo
+                  </a>
+                </div>
+              </section>
+            );
+          })}
         </div>
       </div>
     </div>
