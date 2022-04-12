@@ -3,6 +3,24 @@ import React, { useState } from "react";
 
 const MyProjects = ({ projects }) => {
   const [currentProjects, setCurrentProjects] = useState([]);
+  const [counter, setCounter] = useState(1);
+
+  const loadMore = () => {
+    let limit = counter * 3;
+    if (limit > projects.length) {
+      limit = projects.length;
+    }
+    if (limit === projects.length) {
+      document
+        .getElementsByClassName("see__more__btn")[0]
+        .classList.add("active");
+    }
+    setCurrentProjects(
+      currentProjects.concat(projects.slice(counter - 1, limit))
+    );
+    setCounter(limit);
+  };
+
   return (
     <div id="myProjects">
       <div className="container myProjects__container">
@@ -57,11 +75,8 @@ const MyProjects = ({ projects }) => {
       <div className="more">
         <button
           className="btn btn-primary see__more__btn"
-          onClick={() => {
-            setCurrentProjects(projects);
-          }}
+          onClick={() => loadMore()}
         >
-          {" "}
           See more
         </button>
       </div>
