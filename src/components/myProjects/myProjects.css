@@ -1,3 +1,56 @@
 #myProjects {
   min-height: 100vh;
+  padding: 4rem 0rem 4rem;
+}
+
+.myProjects__title {
+  text-align: center;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: var(--color-primary-variant);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.project:hover {
+  background: transparent;
+  transition: var(--transition);
+}
+.project__img > img {
+  border-radius: 1rem;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.project__detail {
+  display: flex;
+  flex-direction: column;
+}
+.project__name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.detail__bottom {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0 0;
+  margin-top: auto;
 }

@@ -13,6 +13,7 @@
 }
 .skills:hover {
   background-color: transparent;
+  transition: var(--transition);
 }
 .skill__title {
   text-align: center;
@@ -23,7 +24,8 @@
   padding: 1rem 5rem;
   background-color: var(--color-primary-variant);
   place-items: center;
-  box-shadow: var(--shadow)
+  box-shadow: var(--shadow);
+  transition: var(--transition);
 }
 .skills__content {
   display: grid;
@@ -38,7 +40,7 @@
 .skill__icon {
   margin-top: 6px;
 }
-.level{
+.level {
   font-size: 0.8rem;
   color: rgb(89, 117, 199);
 }
