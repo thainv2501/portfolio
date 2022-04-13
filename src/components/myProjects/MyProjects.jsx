@@ -1,26 +1,27 @@
 import "./myProjects.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const MyProjects = ({ projects }) => {
   const [currentProjects, setCurrentProjects] = useState([]);
   const [counter, setCounter] = useState(1);
 
-  const loadMore = () => {
+  const loadMore = (element) => {
     let limit = counter * 3;
     if (limit > projects.length) {
       limit = projects.length;
     }
     if (limit === projects.length) {
-      document
-        .getElementsByClassName("see__more__btn")[0]
-        .classList.add("active");
+      element.target.classList.add("active");
     }
     setCurrentProjects(
       currentProjects.concat(projects.slice(counter - 1, limit))
     );
-    setCounter(limit);
+    setCounter(limit + 1);
   };
 
+  useEffect(() => {
+    loadMore();
+  }, []);
   return (
     <div id="myProjects">
       <div className="container myProjects__container">
@@ -50,22 +51,26 @@ const MyProjects = ({ projects }) => {
                 </div>
 
                 <div className="detail__bottom">
-                  <a
-                    href={git_hub_link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="btn"
-                  >
-                    Gib Hub
-                  </a>
-                  <a
-                    href={demo_link}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="btn btn-primary"
-                  >
-                    View demo
-                  </a>
+                  {git_hub_link ? (
+                    <a
+                      href={git_hub_link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="btn"
+                    >
+                      Gib Hub
+                    </a>
+                  ) : null}
+                  {demo_link ? (
+                    <a
+                      href={demo_link}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="btn btn-primary"
+                    >
+                      View demo
+                    </a>
+                  ) : null}
                 </div>
               </section>
             );
@@ -73,10 +78,7 @@ const MyProjects = ({ projects }) => {
         </div>
       </div>
       <div className="more">
-        <button
-          className="btn btn-primary see__more__btn"
-          onClick={() => loadMore()}
-        >
+        <button className="btn btn-primary see__more__btn" onClick={loadMore}>
           See more
         </button>
       </div>

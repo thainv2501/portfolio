@@ -4,6 +4,7 @@ import {
   AiFillHome,
   AiOutlineFundProjectionScreen,
   AiFillCheckCircle,
+  AiFillPhone,
 } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { useState } from "react";
@@ -39,6 +40,13 @@ const Nav = () => {
         className={activeNav === "#myProjects" ? "active" : ""}
       >
         <AiOutlineFundProjectionScreen />
+      </a>
+      <a
+        href="#contact"
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
+      >
+        <AiFillPhone />
       </a>
     </nav>
   );

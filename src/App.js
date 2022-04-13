@@ -2,7 +2,7 @@ import Header from './components/header/Header';
 import About from './components/about/About';
 import MyProjects from './components/myProjects/MyProjects';
 import Skills from './components/skills/Skills';
-// import Contact from './components/contact/Contact';
+import Contact from './components/contact/Contact';
 // import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav';
 import data from './data'
@@ -20,8 +20,8 @@ export default function App() {
             <About about={about} />
             <Skills skills={skills} />
             <MyProjects projects={projects} />
-            {/* <Contact />
-            <Footer /> */}
+            <Contact />
+            {/* <Footer />  */}
         </div>
 
     )

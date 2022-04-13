@@ -1,6 +1,9 @@
 import color_box_img from "./assets/color-box.png";
 import creative_navbar_img from "./assets/creative-navbar.png";
 import keo_bua_bao from "./assets/keo_bua_bao.png";
+import meme from "./assets/meme.jpg";
+import user_list from "./assets/user_list.png";
+
 
 
 const data = {
@@ -106,6 +109,21 @@ const data = {
             git_hub_link: "https://github.com/thainv2501/Rock-papper-scissor",
             demo_link: "https://thainv2501.github.io/Rock-papper-scissor/"
         },
+        {
+            project_name: "meme-generator",
+            project_img: meme,
+            description: "A meme generator created by React JS",
+            git_hub_link: "https://github.com/thainv2501/meme-generator",
+            demo_link: ""
+        },
+        {
+            project_name: "user-list",
+            project_img: user_list,
+            description: "Practice React JS like : fetch API, useState, useEffect",
+            git_hub_link: "https://github.com/thainv2501/user-list",
+            demo_link: "https://user-list-application.herokuapp.com/"
+        },
+
     ]
 }
 
