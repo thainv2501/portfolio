@@ -6,17 +6,17 @@ const MyProjects = ({ projects }) => {
   const [counter, setCounter] = useState(1);
 
   const loadMore = (element) => {
-    let limit = counter * 3;
-    if (limit > projects.length) {
-      limit = projects.length;
-    }
-    if (limit === projects.length) {
+    let lastProjectIndex = counter * 3;
+    let firstProjectIndex = lastProjectIndex - 3;
+
+    if (lastProjectIndex > projects.length)
       element.target.classList.add("active");
-    }
     setCurrentProjects(
-      currentProjects.concat(projects.slice(counter - 1, limit))
+      currentProjects.concat(
+        projects.slice(firstProjectIndex, lastProjectIndex)
+      )
     );
-    setCounter(limit + 1);
+    setCounter(counter + 1);
   };
 
   useEffect(() => {
