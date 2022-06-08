@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/rodrick.jpg";
+import ME from "../../assets/mypic.png";
 import { AiOutlineExperiment, AiFillFolderOpen } from "react-icons/ai";
 import { BiBuildingHouse } from "react-icons/bi";
 
