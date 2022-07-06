@@ -2,7 +2,8 @@ import React from "react";
 import "./contact.css";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
 
-const Contact = () => {
+const Contact = ({contact}) => {
+  const{phone,gmail} = contact;
   return (
     <div id="contact">
       <div className="contact__title">
@@ -13,11 +14,11 @@ const Contact = () => {
       <div className="container contact__container">
         <article className="contact__method">
           <AiFillPhone className="contact__icon" />
-          <p>0398655613</p>
+          <p>{phone}</p>
         </article>
         <article className="contact__method">
           <AiFillMail className="contact__icon" />
-          <p>taolanhuthedo2001@gmail.com</p>
+          <p>{gmail}</p>
         </article>
         <article className="contact__method">
           <AiFillPhone className="contact__icon" />

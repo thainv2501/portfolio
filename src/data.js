@@ -19,6 +19,10 @@ const data = {
         worked_for: 1,
         projects_number: 2
     },
+    contact : {
+        phone : "0398655613",
+        gmail : "thainv25@gmail.com",
+    },
     skills: [
         {
             title: 'Front End Skills',

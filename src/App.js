@@ -12,7 +12,7 @@ import React, { useState } from 'react';
 
 export default function App() {
     const [me, setMe] = useState(data);
-    const { about, skills, projects } = me;
+    const { about, skills, projects,contact } = me;
     return (
         <div>
             <Header me={me} />
@@ -20,7 +20,7 @@ export default function App() {
             <About about={about} />
             <Skills skills={skills} />
             <MyProjects projects={projects} />
-            <Contact />
+            <Contact contact={contact}/>
             {/* <Footer />  */}
         </div>
 
