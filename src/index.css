@@ -24,6 +24,12 @@
   --shadow: rgba(65, 129, 193, 0.5) 0rem 0rem 1rem 0.5rem;
 }
 
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -130,11 +136,7 @@ a:hover {
   background-color: var(--color-primary);
   color: var(--color-dark);
 }
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
+
 
 /* ====================MEDIA QUERY(medium)============================ */
 @media screen and (max-width: 1024px) {
