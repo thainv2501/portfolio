@@ -13,7 +13,7 @@ for (let index = 0; index < starNumber; index++) {
   let rng2 = Math.floor(Math.random() * 255)
   let rng3 = Math.floor(Math.random() * 255)
   spanNode.style.background = `rgb(${rng1},${rng2},${rng3})`
-  let delay = Math.random() * 5
+  let delay = Math.random() * 5;
   spanNode.style.animationDelay = delay + 's'
   stars.appendChild(spanNode).classList.add('star')
 
