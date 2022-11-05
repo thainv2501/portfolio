@@ -3,7 +3,7 @@ import CV from "../../assets/Viet-Thai-CV.pdf";
 
 export const CTA = () => {
   return (
-    <div className="cta">
+    <div className="cta" >
       <a href={CV} download className="btn btn-primary">
         Download CV
       </a>

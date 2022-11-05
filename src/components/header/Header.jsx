@@ -11,7 +11,7 @@ const Header = ({ me }) => {
     position,
   } = me;
   return (
-    <header id="header">
+    <header id="header" className="nav_link">
       <div className="container header__container">
         <h5>Hi ! Welcome to My Portfolio </h5>
         <h1>

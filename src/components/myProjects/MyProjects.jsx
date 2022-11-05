@@ -23,7 +23,7 @@ const MyProjects = ({ projects }) => {
     loadMore();
   }, []);
   return (
-    <div id="myProjects">
+    <div id="myProjects" className="nav_link">
       <div className="container myProjects__container">
         <div className="myProjects__title">
           <h5>You could view some of my</h5>

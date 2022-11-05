@@ -2,10 +2,10 @@ import React from "react";
 import "./contact.css";
 import { AiFillPhone, AiFillMail } from "react-icons/ai";
 
-const Contact = ({contact}) => {
-  const{phone,gmail} = contact;
+const Contact = ({ contact }) => {
+  const { phone, gmail } = contact;
   return (
-    <div id="contact">
+    <div id="contact" className="nav_link">
       <div className="contact__title">
         <h5>If you have interest</h5>
         <h1>Contact With Me</h1>

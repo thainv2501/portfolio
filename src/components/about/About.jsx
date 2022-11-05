@@ -7,7 +7,7 @@ import { BiBuildingHouse } from "react-icons/bi";
 const About = ({ about }) => {
   const { experiment_years, worked_for, projects_number } = about;
   return (
-    <div id="about">
+    <div id="about" className="nav_link">
       <div className="about__title">
         <h5>Some thing</h5>
         <h2>About Me</h2>
